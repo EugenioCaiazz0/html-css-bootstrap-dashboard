@@ -1,19 +1,23 @@
 @media (min-width: 576px) {
 
     #head-searchbar{
-        width: 80%;
+        width: 80vw;
         background-color: #e5e5e5;
     }
 
     #bell-menu{
-        width: 10%;
+        width: 10vw;
     }
 
     #header-logo{
-        width: 10%;
+        width: 10vw;
     }
 
     #left-sidebar{
-        width: 10%;
+        width: 10vw;
+    }
+
+    #student-section{
+        width: 90vw;
     }
 }

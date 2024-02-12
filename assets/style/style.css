@@ -30,7 +30,7 @@ img{
 }
 
 #header-logo{
-    width: 15%;
+    width: 15vw;
 }
 
 #header-logo img{
@@ -40,7 +40,7 @@ img{
 
 #head-searchbar{
     max-height: 50px;
-    width: 70%;
+    width: 70vw;
     background-color: #e5e5e5;
 }
 
@@ -59,7 +59,7 @@ img{
 }
 
 #bell-menu{
-    width: 15%;
+    width: 15vw;
 }
 
 #bell-menu i{
@@ -75,3 +75,13 @@ img{
     padding-top: 80px;
 }
 
+#student-section{
+    background-color: #1d72e8;
+    color: white;
+    width: 85vw;
+    height: fit-content;
+}
+
+.badge{
+    background-color: hsla(0, 0%, 0%, 0.180);
+}
