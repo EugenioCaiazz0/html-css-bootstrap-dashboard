@@ -1,7 +1,19 @@
 @media (min-width: 576px) {
 
     #head-searchbar{
-        width: 85%;
+        width: 80%;
         background-color: #e5e5e5;
+    }
+
+    #bell-menu{
+        width: 10%;
+    }
+
+    #header-logo{
+        width: 10%;
+    }
+
+    #left-sidebar{
+        width: 10%;
     }
 }

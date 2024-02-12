@@ -57,6 +57,7 @@ img{
     margin-left: 5px;
     margin-right: 5px;
 }
+
 #bell-menu{
     width: 15%;
 }
@@ -65,3 +66,12 @@ img{
     color: #ff8f01;
     font-size: large;
 }
+
+#left-sidebar{
+    color: white;
+    background-color: #051d34;
+    width: 15%;
+    height: 100vh;
+    padding-top: 80px;
+}
+
