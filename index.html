@@ -40,9 +40,10 @@
 
     <!--LEFT SIDEBAR-->
     <section id="left-sidebar" class="debug d-flex flex-column justify-content-between align-items-center p-0">
+        
         <nav>
           <ul class="list-unstyled ">
-            <li>
+            <li class="hover">
                 <i class="fa-solid fa-house my-2"></i>
             </li>
             <li>
@@ -57,11 +58,17 @@
         <div>
             <i class="fa-solid fa-gear"></i>
         </div>
+
     </section>
 
 
+    
+    
+    <section id="information-page"  class="container-fluid  d-flex flex-column p-0 m-0  debug">
+        
     <!--STUDENT SECTION-->
     <section id="student-section">
+        
         <div class="container d-flex ">
             <div class="row w-100 ">
                 <div class="col-12 col-md-4 col-xl-6 mt-3 ">
@@ -83,13 +90,156 @@
                 </div>
             </div>
         </div>
+    
     </section>
 
-    <!--CLASS SECTION-->
-    <section>
+        <div class="container d-flex debug">
+            <div class="row w-100 debug h-100 m-0 p-0">
+                
+                <!--CLASS SECTION ***devo vedere meglio come farla***-->
+                <section>
+                    <div class="col-12 col-xl-9 gy-3 ">
+                        <div class="card">
+                            <h3 class="card-header"> Prossime classi </h3>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item d-flex justify-content-between">
+                                    <div>Nome</div>
+                                    <div>
+                                        <ul class="d-flex flex-row">
+                                            <li class="d-block m-1">Data inizio</li>
+                                            <li class="d-block m-1">ROI</li>
+                                            <li class="d-block m-1">Stato</li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="list-group-item ">
+                                    <div>
+                                        <img src="assets/img/class-avatar.jpg" alt="">
+                                        Classe 75
+                                    </div>
+                                </li>
+                                <li class="list-group-item ">
+                                    <div>
+                                        <img src="assets/img/class-avatar.jpg" alt="">
+                                        Classe 76
+                                    </div>
+                                </li>
+                                <li class="list-group-item ">
+                                    <div>
+                                        <img src="assets/img/class-avatar.jpg" alt="">
+                                        Classe 77
+                                    </div>
+                                </li>
+                                <li class="list-group-item ">
+                                    <div>
+                                        <img src="assets/img/class-avatar.jpg" alt="">
+                                        Classe 78
+                                    </div>
+                                </li>
+                                <li class="list-group-item ">
+                                    <div>
+                                        <img src="assets/img/class-avatar.jpg" alt="">
+                                        Classe 79
+                                    </div>
+                                </li>
+                                <li class="list-group-item ">
+                                    <div>
+                                        <img src="assets/img/class-avatar.jpg" alt="">
+                                        Classe 80
+                                    </div>
+                                </li>
+                                <li class="list-group-item ">
+                                    <div>
+                                        <img src="assets/img/class-avatar.jpg" alt="">
+                                        Classe 81
+                                    </div>
+                                </li>
+                                <li class="list-group-item ">
+                                    <div>
+                                        <img src="assets/img/class-avatar.jpg" alt="">
+                                        Classe 82
+                                    </div>
+                                </li>   
+                            </ul>
+                        </div>
+                    </div>
+                </section>
 
+                <!--F.A.Q SECTION-->
+                <section>
+                    <div class="col-12 col-xl-9 gy-3 ">
+                        <div class="card">
+                            <h3 class="card-header"> F.A.Q. </h3>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Come aggiungere un nuovo studente?</li>
+                                <li class="list-group-item">Come posso accedere alle informazioni del mio account?</li>
+                                <li class="list-group-item">Posso usare questa dashboard da mobile?</li>
+                              </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <!--TO-DO SECTION-->
+                <section>
+                    <div class="col-12 col-xl-3 gy-3 ">
+                        <div class="card">
+                            <h3 class="card-header "> To-Do </h3>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                      Kickoff nuove classi
+                                    </label>
+                                  </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                      Lezione su Bootstrap 5 in classe #75
+                                    </label>
+                                  </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                      Controllare username Github studenti
+                                    </label>
+                                  </div>
+                            </li>
+                          </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <!--CHART SECTION-->
+                <section>
+                    <div class="col-12 col-xl-3 gy-3 ">
+                        <div class="card">
+                            <img src="assets/img/stats.jpeg" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">Utenti attivi</h5>
+                                <p class="card-text">Lista degli utenti attivi in piattaforma nell'ultimo mese</p>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">Gennaio: 1200</li>
+                                    <li class="list-group-item">Febbraio: 800</li>
+                                    <li class="list-group-item">Marzo: 1500</li>
+                                    <li class="list-group-item "><a href="">Visualizza report approfondito</a></li>
+                                  </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        </div>
+    
+    </section>
+        
     </section>
 
-</section>
 </body>
+
 </html>
