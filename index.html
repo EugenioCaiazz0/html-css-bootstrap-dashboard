@@ -29,9 +29,16 @@
                 <input type="search" placeholder="Prova a cercare: Lezioni di Laravel">
             </div>
 
-            <div id="bell-menu" class="debug d-flex align-items-center justify-content-center ">
-                <i class="fa-solid fa-bell"></i>
-            </div>
+            <div class="dropdown d-flex justify-content-center align-items-center bg-opacity-0 " id="bell-menu">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="bellMenBtn" data-bs-toggle="dropdown">
+                    <i class="fa-solid fa-bell"></i>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="bellMenuBtn">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </div>
         </div>
     </header>
 
@@ -75,7 +82,7 @@
                 <div class="col-12 col-md-4 col-xl-6 mt-3 ">
                     <p> Nuovo studente </p>  
                     <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
-                        <!--<i class="fa-solid fa-plus border border-white rounded p-2 m-1 ">--> Bottone</i> <!--VISIBILITY DEL CANVAS NON FUNZIONA-->
+                        <!--<i class="fa-solid fa-plus border border-white rounded p-2 m-1 ">--> Bottone</i> <!--VISIBILITY DEL CANVAS NON FUNZIONA, PROBLEMA DEL MIO BROWSER?-->
                     </button>
                     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
                         <div class="offcanvas-header">
@@ -164,142 +171,154 @@
         <div class="container d-flex debug">
             <div class="row w-100 debug h-100 m-0 p-0">
                 
-                <!--CLASS SECTION ***devo vedere meglio come farla***-->
-                <section>
-                    <div class="col-12 col-xl-9 gy-3 ">
-                        <div class="card">
-                            <h3 class="card-header"> Prossime classi </h3>
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item d-flex justify-content-between">
-                                    <div>Nome</div>
-                                    <div>
-                                        <ul class="d-flex flex-row">
-                                            <li class="d-block m-1">Data inizio</li>
-                                            <li class="d-block m-1">ROI</li>
-                                            <li class="d-block m-1">Stato</li>
-                                        </ul>
-                                    </div>
-                                </li>
-                                <li class="list-group-item ">
-                                    <div>
-                                        <img src="assets/img/class-avatar.jpg" alt="">
-                                        Classe 75
-                                    </div>
-                                </li>
-                                <li class="list-group-item ">
-                                    <div>
-                                        <img src="assets/img/class-avatar.jpg" alt="">
-                                        Classe 76
-                                    </div>
-                                </li>
-                                <li class="list-group-item ">
-                                    <div>
-                                        <img src="assets/img/class-avatar.jpg" alt="">
-                                        Classe 77
-                                    </div>
-                                </li>
-                                <li class="list-group-item ">
-                                    <div>
-                                        <img src="assets/img/class-avatar.jpg" alt="">
-                                        Classe 78
-                                    </div>
-                                </li>
-                                <li class="list-group-item ">
-                                    <div>
-                                        <img src="assets/img/class-avatar.jpg" alt="">
-                                        Classe 79
-                                    </div>
-                                </li>
-                                <li class="list-group-item ">
-                                    <div>
-                                        <img src="assets/img/class-avatar.jpg" alt="">
-                                        Classe 80
-                                    </div>
-                                </li>
-                                <li class="list-group-item ">
-                                    <div>
-                                        <img src="assets/img/class-avatar.jpg" alt="">
-                                        Classe 81
-                                    </div>
-                                </li>
-                                <li class="list-group-item ">
-                                    <div>
-                                        <img src="assets/img/class-avatar.jpg" alt="">
-                                        Classe 82
-                                    </div>
-                                </li>   
-                            </ul>
-                        </div>
-                    </div>
-                </section>
-
-                <!--F.A.Q SECTION-->
-                <section>
-                    <div class="col-12 col-xl-9 gy-3 ">
-                        <div class="card">
-                            <h3 class="card-header"> F.A.Q. </h3>
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item">Come aggiungere un nuovo studente?</li>
-                                <li class="list-group-item">Come posso accedere alle informazioni del mio account?</li>
-                                <li class="list-group-item">Posso usare questa dashboard da mobile?</li>
-                              </ul>
-                        </div>
-                    </div>
-                </section>
-
-                <!--TO-DO SECTION-->
-                <section>
-                    <div class="col-12 col-xl-3 gy-3 ">
-                        <div class="card">
-                            <h3 class="card-header "> To-Do </h3>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                    <label class="form-check-label" for="flexCheckDefault">
-                                      Kickoff nuove classi
-                                    </label>
-                                  </div>
-                            </li>
-                            <li class="list-group-item">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                    <label class="form-check-label" for="flexCheckDefault">
-                                      Lezione su Bootstrap 5 in classe #75
-                                    </label>
-                                  </div>
-                            </li>
-                            <li class="list-group-item">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                    <label class="form-check-label" for="flexCheckDefault">
-                                      Controllare username Github studenti
-                                    </label>
-                                  </div>
-                            </li>
-                          </ul>
-                        </div>
-                    </div>
-                </section>
-
-                <!--CHART SECTION-->
-                <section>
-                    <div class="col-12 col-xl-3 gy-3 ">
-                        <div class="card">
-                            <img src="assets/img/stats.jpeg" class="card-img-top">
-                            <div class="card-body">
-                                <h5 class="card-title">Utenti attivi</h5>
-                                <p class="card-text">Lista degli utenti attivi in piattaforma nell'ultimo mese</p>
+                <div class="col-12 col-xl-9 ">
+                    <div class="row w-100 debug h-100 m-0 p-0">
+                    <!--CLASS SECTION ***devo vedere meglio come farla***-->
+                    <section>
+                        <div class="col-12 gy-3 ">
+                            <div class="card">
+                                <h3 class="card-header"> Prossime classi </h3>
                                 <ul class="list-group list-group-flush">
-                                    <li class="list-group-item">Gennaio: 1200</li>
-                                    <li class="list-group-item">Febbraio: 800</li>
-                                    <li class="list-group-item">Marzo: 1500</li>
-                                    <li class="list-group-item "><a href="">Visualizza report approfondito</a></li>
-                                  </ul>
+                                    <li class="list-group-item d-flex justify-content-between">
+                                        <div>Nome</div>
+                                        <div>
+                                            <ul class="d-flex flex-row">
+                                                <li class="d-block m-1">Data inizio</li>
+                                                <li class="d-block m-1">ROI</li>
+                                                <li class="d-block m-1">Stato</li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item ">
+                                        <div>
+                                            <img src="assets/img/class-avatar.jpg" alt="">
+                                            Classe 75
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item ">
+                                        <div>
+                                            <img src="assets/img/class-avatar.jpg" alt="">
+                                            Classe 76
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item ">
+                                        <div>
+                                            <img src="assets/img/class-avatar.jpg" alt="">
+                                            Classe 77
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item ">
+                                        <div>
+                                            <img src="assets/img/class-avatar.jpg" alt="">
+                                            Classe 78
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item ">
+                                        <div>
+                                            <img src="assets/img/class-avatar.jpg" alt="">
+                                            Classe 79
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item ">
+                                        <div>
+                                            <img src="assets/img/class-avatar.jpg" alt="">
+                                            Classe 80
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item ">
+                                        <div>
+                                            <img src="assets/img/class-avatar.jpg" alt="">
+                                            Classe 81
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item ">
+                                        <div>
+                                            <img src="assets/img/class-avatar.jpg" alt="">
+                                            Classe 82
+                                        </div>
+                                    </li>   
+                                </ul>
                             </div>
                         </div>
+                    </section>
+
+                    <!--F.A.Q SECTION-->
+                    <section>
+                        <div class="col-12 gy-3 ">
+                            <div class="card">
+                                <h3 class="card-header"> F.A.Q. </h3>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">Come aggiungere un nuovo studente?</li>
+                                    <li class="list-group-item">Come posso accedere alle informazioni del mio account?</li>
+                                    <li class="list-group-item">Posso usare questa dashboard da mobile?</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+           
                     </div>
-                </section>
+                </div>
+
+
+                <div class="col-12 col-xl-3 ">
+                    <div class="row w-100 debug h-100 m-0 p-0">
+                
+                    <!--TO-DO SECTION-->
+                    <section>
+                        <div class="col-12 gy-3 ">
+                            <div class="card">
+                                <h3 class="card-header "> To-Do </h3>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                        Kickoff nuove classi
+                                        </label>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                        Lezione su Bootstrap 5 in classe #75
+                                        </label>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Controllare username Github studenti
+                                        </label>
+                                    </div>
+                                </li>
+                            </ul>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!--CHART SECTION-->
+                    <section>
+                        <div class="col-12 gy-3 ">
+                            <div class="card">
+                                <img src="assets/img/stats.jpeg" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="card-title">Utenti attivi</h5>
+                                    <p class="card-text">Lista degli utenti attivi in piattaforma nell'ultimo mese</p>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">Gennaio: 1200</li>
+                                        <li class="list-group-item">Febbraio: 800</li>
+                                        <li class="list-group-item">Marzo: 1500</li>
+                                        <li class="list-group-item "><a href="">Visualizza report approfondito</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+            
+                </div>
+            </div>
 
             </div>
         </div>
